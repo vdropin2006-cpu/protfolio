@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dropthan — B2B Digital Business Platform | Thangavelu Venkatraj</title>
+  <meta name="description" content="Dropthan is a modern B2B digital business platform founded by Thangavelu Venkatraj. Discover selected products, digital solutions, and business services for dropshippers, online sellers, and entrepreneurs." />
+  <meta name="keywords" content="Dropthan, B2B platform, dropshipping, digital marketing, invoicing, Meta Ads, Thangavelu Venkatraj" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div id="main-site" class="main-site">
+
+    <!-- ===== HEADER / NAV ===== -->
+    <header class="header" id="header">
+      <div class="header-inner">
+        <div class="logo" id="logo-link">
+          <div class="logo-icon">
+            <img src="logo.jpg" alt="Dropthan logo" class="brand-logo-image" width="48" height="48" />
+          </div>
+          <span class="logo-text">DROPTHAN</span>
+        </div>
+
+        <nav class="nav-desktop" id="navDesktop">
+          <a href="#services" class="nav-link" id="nav-home">Home</a>
+          <a href="#about" class="nav-link" id="nav-about">About</a>
+          <a href="#services" class="nav-link" id="nav-services">Services</a>
+          <a href="#contact" class="nav-link" id="nav-portfolio">Portfolio</a>
+          <a href="#contact" class="nav-link" id="nav-contact">Contact</a>
+        </nav>
+
+        <a href="#contact" class="btn-header" id="btn-get-in-touch">Get In Touch</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div class="mobile-nav" id="mobileNav">
+        <a href="#services" class="mobile-nav-link" id="mnav-home">Home</a>
+        <a href="#about" class="mobile-nav-link" id="mnav-about">About</a>
+        <a href="#services" class="mobile-nav-link" id="mnav-services">Services</a>
+        <a href="#contact" class="mobile-nav-link" id="mnav-portfolio">Portfolio</a>
+        <a href="#contact" class="mobile-nav-link" id="mnav-contact">Contact</a>
+        <a href="#contact" class="btn-header mobile-cta" id="mnav-cta">Get In Touch</a>
+      </div>
+    </header>
+
+    <!-- ===== HERO — SCROLL-DRIVEN FRAME ANIMATION ===== -->
+    <!--
+      Tall container = scroll distance.
+      Inner .hero-sticky stays fixed in viewport as user scrolls,
+      JS updates the <img> src frame-by-frame based on scroll progress.
+    -->
+    <div id="heroScrollContainer" class="hero-scroll-container">
+      <div class="hero-sticky" id="heroSticky">
+
+        <!-- Subtle background gradient -->
+        <div class="hero-scene-bg"></div>
+
+        <!-- DROPTHAN: wireframe → solid on scroll -->
+        <div class="hero-dt-wrap" id="heroDtWrap">
+          <span class="hero-dt-letter" style="--i:0">D</span>
+          <span class="hero-dt-letter" style="--i:1">R</span>
+          <span class="hero-dt-letter" style="--i:2">O</span>
+          <span class="hero-dt-letter" style="--i:3">P</span>
+          <span class="hero-dt-letter" style="--i:4">T</span>
+          <span class="hero-dt-letter" style="--i:5">H</span>
+          <span class="hero-dt-letter" style="--i:6">A</span>
+          <span class="hero-dt-letter" style="--i:7">N</span>
+        </div>
+
+        <!-- WELCOME: slides up from below title on scroll -->
+        <div class="hero-welcome-label" id="heroWelcomeLabel">W E L C O M E</div>
+
+        <!-- Portrait frame: src swapped by JS on scroll -->
+        <div class="hero-portrait-wrap" id="heroPortraitWrap">
+          <div class="hero-portrait-glow"></div>
+          <img
+            id="heroFrame"
+            class="hero-frame-img"
+            src="ezgif-8a8b7b8f7533085b-jpg/ezgif-frame-001.jpg"
+            alt="Thangavelu Venkatraj — Founder & CEO, Dropthan"
+          />
+        </div>
+
+        <!-- Scroll indicator: fades out on first scroll -->
+        <div class="scroll-indicator" id="scrollIndicator">
+          <div class="scroll-mouse"><div class="scroll-dot"></div></div>
+          <span>Scroll Down</span>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ===== SERVICES SECTION ===== -->
+    <section class="services-section" id="services">
+      <div class="section-container">
+        <div class="section-label">
+          <div class="label-dot"></div>
+          <span>DROPTHAN</span>
+        </div>
+        <div class="section-header-row">
+          <div>
+            <h2 class="section-title reveal-up">Dropthan Ecosystem <span class="blue-text">Services</span></h2>
+            <p class="section-subtitle reveal-up" style="animation-delay:0.1s">
+              We provide powerful digital solutions for businesses,<br class="br-desktop"/>
+              startups and entrepreneurs — all under one platform.
+            </p>
+          </div>
+          <div class="services-actions" id="servicesActions">
+            <div class="services-rotation-ui">
+              <span class="services-rotation-status" id="servicesRotationStatus" aria-live="polite">Auto rotation · Service 1 of 4</span>
+              <button type="button" class="services-rotation-toggle" id="servicesRotationToggle" aria-pressed="false">
+                Pause rotation
+              </button>
+            </div>
+            <a href="#contact" class="btn-explore-all reveal-up" id="btn-explore-all" style="animation-delay:0.2s">
+              Explore All Services →
+            </a>
+          </div>
+        </div>
+
+        <div class="services-grid" id="servicesGrid">
+
+          <div class="service-card" id="service-b2b" role="button" tabindex="0" aria-pressed="false" aria-label="Select B2B Organic and Wholesale Aggregation and pause rotation">
+            <div class="service-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect x="2" y="8" width="12" height="16" rx="2" stroke="#4da6ff" stroke-width="1.5" fill="rgba(77,166,255,0.07)"/>
+                <rect x="18" y="8" width="12" height="16" rx="2" stroke="#4da6ff" stroke-width="1.5" fill="rgba(77,166,255,0.07)"/>
+                <path d="M14 16h4" stroke="#4da6ff" stroke-width="1.5" stroke-linecap="round"/>
+                <circle cx="8" cy="16" r="2" fill="#4da6ff" opacity="0.7"/>
+                <circle cx="24" cy="16" r="2" fill="#4da6ff" opacity="0.7"/>
+              </svg>
+            </div>
+            <div class="service-num">01</div>
+            <h3 class="service-name">B2B Organic &amp; Wholesale Aggregation</h3>
+            <p class="service-desc">Connect with trusted organic wholesalers and suppliers. Get the best natural and organic products, prices, and B2B trade opportunities.</p>
+            <span class="service-arrow" id="svc-b2b-arrow" aria-hidden="true">→</span>
+          </div>
+
+          <div class="service-card" id="service-zerodemo" role="button" tabindex="0" aria-pressed="false" aria-label="Select E-Commerce Setup and Onboarding for Meesho and Amazon and pause rotation">
+            <div class="service-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect x="4" y="4" width="24" height="24" rx="3" stroke="#4da6ff" stroke-width="1.5" fill="rgba(77,166,255,0.07)"/>
+                <path d="M10 16l4 4 8-8" stroke="#4da6ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="service-num">02</div>
+            <h3 class="service-name">E-Commerce Setup &amp; Onboarding (Meesho/Amazon)</h3>
+            <p class="service-desc">Complete setup and management for selling on platforms like Meesho and Amazon. We create seller accounts, handle product research, and guide you step-by-step.</p>
+            <span class="service-arrow" id="svc-zero-arrow" aria-hidden="true">→</span>
+          </div>
+
+          <div class="service-card" id="service-billdrops" role="button" tabindex="0" aria-pressed="false" aria-label="Select Custom Website and Buildrops Invoicing App and pause rotation">
+            <div class="service-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <rect x="5" y="3" width="22" height="26" rx="2" stroke="#4da6ff" stroke-width="1.5" fill="rgba(77,166,255,0.07)"/>
+                <path d="M10 10h12M10 15h12M10 20h8" stroke="#4da6ff" stroke-width="1.5" stroke-linecap="round" opacity="0.8"/>
+              </svg>
+            </div>
+            <div class="service-num">03</div>
+            <h3 class="service-name">Custom Website &amp; Buildrops Invoicing App</h3>
+            <p class="service-desc">Get your own e-commerce website, custom branding logos, and simplify your billing with our Buildrops app.</p>
+            <span class="service-arrow" id="svc-bill-arrow" aria-hidden="true">→</span>
+          </div>
+
+          <div class="service-card" id="service-metaads" role="button" tabindex="0" aria-pressed="false" aria-label="Select Dropshipping Support and Digital Marketing and pause rotation">
+            <div class="service-icon">
+              <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                <path d="M4 24L12 14l6 6 4-8 6 8" stroke="#4da6ff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+                <circle cx="26" cy="8" r="3" stroke="#4da6ff" stroke-width="1.5" fill="rgba(77,166,255,0.15)"/>
+              </svg>
+            </div>
+            <div class="service-num">04</div>
+            <h3 class="service-name">Dropshipping Support &amp; Digital Marketing</h3>
+            <p class="service-desc">Empower new dropshippers with full digital support, clothing/skincare brand building, and targeted marketing strategies to scale fast.</p>
+            <span class="service-arrow" id="svc-meta-arrow" aria-hidden="true">→</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT FOUNDER ===== -->
+    <section class="about-section" id="about">
+      <div class="section-container">
+        <div class="about-grid">
+
+          <div class="about-image-col reveal-left" id="aboutImgCol">
+            <div class="about-image-frame">
+              <img
+                src="ezgif-8a8b7b8f7533085b-jpg/ezgif-frame-010.jpg"
+                alt="Thangavelu Venkatraj — Founder & CEO Dropthan"
+                class="about-img"
+                id="aboutFounderImg"
+              />
+            </div>
+          </div>
+
+          <div class="about-content-col reveal-right" id="aboutContent">
+            <div class="section-label">
+              <div class="label-dot"></div>
+              <span>ABOUT FOUNDER</span>
+            </div>
+            <h2 class="about-name">Thangavelu Venkatraj</h2>
+            <h3 class="about-role-title"><span class="blue-text">Founder &amp; CEO</span></h3>
+            <p class="about-desc">
+              I'm Thangavelu Venkatraj, an Electronics &amp; Communication
+              Engineering (ECE) graduate. I started Dropthan with a vision to
+              build digital solutions that create real value for businesses
+              and individuals.
+            </p>
+            <div class="about-tags">
+              <div class="about-tag" id="tag-ece">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4da6ff" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                ECE Graduate
+              </div>
+              <div class="about-tag" id="tag-entrepreneur">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4da6ff" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                Entrepreneur
+              </div>
+              <div class="about-tag" id="tag-tech">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4da6ff" stroke-width="2"><path d="M9 3H5a2 2 0 0 0-2 2v4m6-6h10a2 2 0 0 1 2 2v4M9 3v18m0 0h10a2 2 0 0 0 2-2V9M9 21H5a2 2 0 0 1-2-2V9m0 0h18"/></svg>
+                Tech Enthusiast
+              </div>
+            </div>
+            <a href="https://dropthan.com" target="_blank" rel="noopener" class="btn-primary" id="btn-know-more">
+              Know More About Me →
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT / GET IN TOUCH ===== -->
+    <section class="contact-section" id="contact">
+      <div class="section-container">
+        <div class="contact-grid">
+
+          <div class="contact-left reveal-up">
+            <div class="section-label">
+              <div class="label-dot"></div>
+              <span>GET IN TOUCH</span>
+            </div>
+            <h2 class="contact-title">Let's Build Something <span class="blue-text">Great</span></h2>
+            <p class="contact-desc">
+              Have a project in mind? Want to collaborate?<br/>
+              Feel free to reach out. I'd love to hear from you.
+            </p>
+            <a href="https://wa.me/919999999999" target="_blank" rel="noopener" class="btn-primary" id="btn-contact-me">
+              Contact Me →
+            </a>
+          </div>
+
+          <div class="contact-right">
+            <div class="contact-cards-grid">
+
+              <a href="https://instagram.com/dropthan" target="_blank" rel="noopener" class="contact-card reveal-up" id="card-instagram" style="animation-delay:0.05s">
+                <div class="contact-card-icon insta-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                    <rect x="2" y="2" width="20" height="20" rx="5" stroke="url(#instaGrad)" stroke-width="1.8"/>
+                    <circle cx="12" cy="12" r="4" stroke="url(#instaGrad)" stroke-width="1.8"/>
+                    <circle cx="17.5" cy="6.5" r="1.5" fill="url(#instaGrad)"/>
+                    <defs>
+                      <linearGradient id="instaGrad" x1="2" y1="2" x2="22" y2="22">
+                        <stop offset="0%" stop-color="#f09433"/>
+                        <stop offset="50%" stop-color="#dc2743"/>
+                        <stop offset="100%" stop-color="#bc1888"/>
+                      </linearGradient>
+                    </defs>
+                  </svg>
+                </div>
+                <span class="contact-card-name">Instagram</span>
+                <span class="contact-card-sub">Follow for updates</span>
+              </a>
+
+              <a href="https://dropthan.com" target="_blank" rel="noopener" class="contact-card reveal-up" id="card-dropthan" style="animation-delay:0.12s">
+                <div class="contact-card-icon dropthan-icon">
+                  <img src="logo.jpg" alt="Dropthan logo" class="brand-logo-image" width="56" height="56" />
+                </div>
+                <span class="contact-card-name">Dropthan</span>
+                <span class="contact-card-sub">Visit Platform</span>
+              </a>
+
+              <a href="https://wa.me/918838533014?text=Hi%20Dropthan,%20I%20want%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener" class="contact-card reveal-up" id="card-whatsapp" style="animation-delay:0.19s">
+                <div class="contact-card-icon whatsapp-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="12" r="10" fill="rgba(37,211,102,0.15)" stroke="#25D166" stroke-width="1.5"/>
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z" fill="#25D166"/>
+                  </svg>
+                </div>
+                <span class="contact-card-name">WhatsApp</span>
+                <span class="contact-card-sub">Chat with me</span>
+              </a>
+
+              <a href="https://dropthan.com" target="_blank" rel="noopener" class="contact-card reveal-up" id="card-ceo" style="animation-delay:0.26s">
+                <div class="contact-card-icon ceo-icon">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                    <circle cx="12" cy="8" r="5" stroke="#4da6ff" stroke-width="1.5" fill="rgba(77,166,255,0.12)"/>
+                    <path d="M2 21c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="#4da6ff" stroke-width="1.5" stroke-linecap="round"/>
+                  </svg>
+                </div>
+                <span class="contact-card-name">CEO Profile</span>
+                <span class="contact-card-sub">Connect with me</span>
+              </a>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer" id="footer">
+      <div class="footer-mountain-bg"></div>
+      <div class="footer-inner">
+        <div class="footer-logo-icon">
+          <img src="logo.jpg" alt="Dropthan logo" class="brand-logo-image" width="52" height="52" />
+        </div>
+        <h2 class="footer-title">Thank You</h2>
+        <p class="footer-sub">For visiting Dropthan. Let's build a smarter future together.</p>
+
+        <div class="footer-socials">
+          <a href="https://instagram.com/dropthan" target="_blank" rel="noopener" class="footer-social" id="footer-instagram" aria-label="Instagram">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/918838533014?text=Hi%20Dropthan,%20I%20want%20to%20know%20more%20about%20your%20services." target="_blank" rel="noopener" class="footer-social" id="footer-whatsapp" aria-label="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="footer-divider"></div>
+        <div class="footer-bottom">
+          <span class="footer-brand">DROPTHAN</span>
+        </div>
+        <p class="footer-copy">© 2026 Dropthan. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </div><!-- /main-site -->
+
+  <script src="script.js"></script>
+</body>
+</html>
